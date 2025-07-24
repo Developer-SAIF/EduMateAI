@@ -63,13 +63,13 @@ export const curriculumData: ClassLevel[] = [
             name_bn: 'তাপগতিবিদ্যা',
             topics: [
               {
-                id: 'zeroth-law',
-                name: "Zeroth Law of Thermodynamics",
+                id: 'zeroth-law-of-thermodynamics',
+                name: 'Zeroth Law of Thermodynamics',
                 name_bn: 'তাপগতিবিদ্যার শূন্যতম সূত্র',
                 pdfUrl: '/materials/Class 12/Physics/Thermodynamics/Zeroth Law of Thermodynamics/material.pdf',
               },
-            ]
-          }
+            ],
+          },
         ],
       },
       {
@@ -84,7 +84,7 @@ export const curriculumData: ClassLevel[] = [
             topics: [
               {
                 id: 'differentiation',
-                name: "Differentiation",
+                name: 'Differentiation',
                 name_bn: 'অন্তরীকরণ',
                 pdfUrl: '/materials/Class 12/Math/Calculus/Differentiation/material.pdf',
               },
@@ -115,11 +115,11 @@ export const curriculumData: ClassLevel[] = [
                 name_bn: 'পর্যায়বৃত্ত ধর্ম',
                 pdfUrl: '/materials/Class 11/Chemistry/Periodic Table/Periodic Trends/material.pdf',
               },
-            ]
-          }
-        ]
-      }
-    ]
+            ],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 10,
@@ -142,11 +142,11 @@ export const curriculumData: ClassLevel[] = [
                 name_bn: 'কাজী নজরুল ইসলাম',
                 pdfUrl: '/materials/Class 10/Bangla/Literature/Kazi Nazrul Islam/material.pdf',
               },
-            ]
-          }
-        ]
-      }
-    ]
+            ],
+          },
+        ],
+      },
+    ],
   },
   // Classes 8 and 9 can be added here with a similar structure
 ];
@@ -154,17 +154,17 @@ export const curriculumData: ClassLevel[] = [
 export const getTopicBySlug = (slug: string[]) => {
   if (slug.length !== 4) return null;
   const [classId, subjectId, chapterId, topicId] = slug;
-  
-  const classLevel = curriculumData.find((c) => c.id.toString() === classId);
+
+  const classLevel = curriculumData.find(c => c.id.toString() === classId);
   if (!classLevel) return null;
 
-  const subject = classLevel.subjects.find((s) => s.id === subjectId);
+  const subject = classLevel.subjects.find(s => s.id === subjectId);
   if (!subject) return null;
 
-  const chapter = subject.chapters.find((ch) => ch.id === chapterId);
+  const chapter = subject.chapters.find(ch => ch.id === chapterId);
   if (!chapter) return null;
 
-  const topic = chapter.topics.find((t) => t.id === topicId);
+  const topic = chapter.topics.find(t => t.id === topicId);
   if (!topic) return null;
 
   return { classLevel, subject, chapter, topic };
