@@ -73,20 +73,20 @@ export const curriculumData: ClassLevel[] = [
         ],
       },
       {
-        id: 'math',
-        name: 'Math',
-        name_bn: 'গণিত',
+        id: 'higher-math',
+        name: 'Higher Math',
+        name_bn: 'উচ্চতর গণিত',
         chapters: [
           {
-            id: 'calculus',
-            name: 'Calculus',
-            name_bn: 'ক্যালকুলাস',
+            id: 'matrices',
+            name: 'Matrices',
+            name_bn: 'ম্যাট্রিক্স',
             topics: [
               {
-                id: 'differentiation',
-                name: 'Differentiation',
-                name_bn: 'অন্তরীকরণ',
-                pdfUrl: '/materials/Class 12/Math/Calculus/Differentiation/material.pdf',
+                id: 'introduction-to-matrices',
+                name: 'Introduction to Matrices',
+                name_bn: 'ম্যাট্রিক্স পরিচিতি',
+                pdfUrl: '/materials/Class 12/Higher Math/Matrices/Introduction to Matrices/material.pdf',
               },
             ],
           },
