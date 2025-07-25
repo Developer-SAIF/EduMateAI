@@ -39,11 +39,11 @@ const prompt = ai.definePrompt({
   input: {schema: GenerateAiExplanationInputSchema},
   output: {schema: GenerateAiExplanationOutputSchema},
   prompt: `
-  {{#if (eq mode "teacher")}}
+  {{#if (eq mode 'teacher')}}
     ${teacherPrompt}
-  {{else if (eq mode "fun")}}
+  {{else if (eq mode 'fun')}}
     ${funPrompt}
-  {{else if (eq mode "simple")}}
+  {{else if (eq mode 'simple')}}
     ${simplePrompt}
   {{/if}}
 
