@@ -41,7 +41,6 @@ export const translations = {
     
     // Learn Page
     'learn.study_materials': 'Study Materials',
-    'learn.youtube_videos': 'Related Videos',
     'learn.diagnostic_test': 'Diagnostic Test',
     'learn.start_test': 'Start Diagnostic Test',
     'learn.test.title': 'Diagnostic Test',
@@ -115,7 +114,6 @@ export const translations = {
 
     // Learn Page
     'learn.study_materials': 'স্টাডি ম্যাটেরিয়ালস',
-    'learn.youtube_videos': 'সম্পর্কিত ভিডিও',
     'learn.diagnostic_test': 'ডায়াগনস্টিক পরীক্ষা',
     'learn.start_test': 'ডায়াগনস্টিক পরীক্ষা শুরু করুন',
     'learn.test.title': 'ডায়াগনস্টিক পরীক্ষা',

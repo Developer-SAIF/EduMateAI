@@ -69,7 +69,7 @@ export default function ProfilePage() {
                 <h3 className="mb-4 text-lg font-semibold font-headline text-primary">
                   {t('dashboard.progress.title')}
                 </h3>
-                <div className="grid gap-4 sm:grid-cols-2">
+                <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                   <ProgressCard
                     title={t('dashboard.completed_topics')}
                     value="12"
@@ -98,7 +98,7 @@ export default function ProfilePage() {
                 <h3 className="mb-4 text-lg font-semibold font-headline text-primary">
                   {t('dashboard.gamification.title')}
                 </h3>
-                <div className="grid gap-4 sm:grid-cols-3">
+                <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
                    <GamificationCard
                     title={t('dashboard.points')}
                     value="1,250"
